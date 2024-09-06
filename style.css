@@ -29,12 +29,14 @@ nav ul {
     
 }
 nav a{
-    font-size: 20px;
+    font-size: 132%;
     text-decoration: none;
     padding: 0px 10px 0px 10px;
     font-weight: bold;
+    color: rgb(19, 69, 135);
     &:hover{
-        color:rgb(10, 10, 255);
+        /* text-shadow: 4px 4px 20px rgb(151, 149, 149); */
+        color: rgb(25, 56, 97);
     }
 }
 .name{
@@ -112,12 +114,12 @@ marquee{
 .main ul li a{
     color: black;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 120%;
     font-weight: bold; 
     &:hover{
         /* background-color: rgba(243, 241, 241, 0.911); */
-        transition: 0.7s;
-        font-size: 23px;   
+        transition: 0.5s;
+        font-size: 130%;   
     }
 }
 .middle{
@@ -145,25 +147,50 @@ marquee{
     height: 50px;
     display: flex;
     align-items: center;
-    box-shadow: 2px 0px 2px 1px rgb(182, 178, 178);
+    box-shadow: 0px 2px 2px rgb(182, 178, 178);
     margin: 1px 5px;
+    cursor:pointer;
+    background-color: white;
+    border-radius: 5px;
     &:hover{
-        background-color: rgba(34, 82, 124, 0.911);
+        transition: 0.5s;
+        background-color: rgb(19, 69, 135);
         a{
             color: white;
         }
     }
 }
-
 .slider marquee .item a{
     color: black;
     text-decoration: none;
     font-size: 20px;
-    font-weight: 2000px;
-
+    color: rgb(68, 67, 67);
+    padding-left: 5px;
     &:hover{
         transition: 0.4s;
-        font-size: 22px;   
+        /* font-size: 22px;    */
+    }
+}
+.slider button{
+    display: inline;
+    margin-top: 20px;
+    margin-left: 410px;
+    background-color:rgb(19, 69, 135) ;
+    color: white;
+    height: 35px;
+    width: 80px;
+    border: none;
+    &:hover{
+        /* box-shadow: 0px 0px 2px black; */
+        box-shadow: 0px 0px 3px rgb(0,0,0);
+        transition: 0.3s;
+        /* background-color:rgb(13, 46, 89) ; */
+        /* color: yellow; */
+        cursor: pointer;
+    }
+    &:active{
+        background-color:whitesmoke ;
+        color: rgb(19, 69, 135);
     }
 }
 .vision-mission{
@@ -197,6 +224,14 @@ marquee{
 }
 .placement marquee {
     display: flex;
+    margin-bottom: 50px;
+    padding:30px;
+    overflow: visible;
+}
+.placement h2,.Recruiters h3{
+    color:rgb(19, 69, 135);
+    text-align: center;
+    font-size: 25px;
 }
 .placement ul li{
     display: flex;
@@ -205,12 +240,83 @@ marquee{
     float: left;
 }
 .placement-item{
-    padding:20px;
-    height:fit-content;
-    width:fit-content;
+    padding:30px;
+    width: 240px;  
+    height: 250px; 
     text-align: center;
-    box-shadow: 5px 5px 5px 1px black;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);  
+    /* border-radius: 20px; */
     &:hover{
-        
+        transition: 0.3s;
+        box-shadow: 0px 0px 20px  rgb(44, 102, 179);  
+        /* border-radius: 20px;   */
+    }
+}
+.placement ul li img{
+    height: 80%;
+    width: 90%;
+    padding-bottom: 5px;
+}
+.placement ul li h3{
+    padding: 8px 0px;
+    /* position: absolute; */
+    /* padding-top: 5px; */
+}
+.placement ul li p{
+    padding: 5px 0px;
+    text-transform: uppercase;
+}
+.Recruiters{
+    height: 300px;
+    width: auto;
+}
+.Recruiters marquee{
+    margin-top:40px ;
+    margin-bottom: 50px;
+}
+.Recruiters marquee img{
+    margin: 10px 40px;
+    width: 20%;
+    height: 70%;
+}
+.footer{
+    height: 450px;
+    width: auto;
+    background-color: rgb(19, 69, 135);
+    padding-left: 70px;
+    color: white;
+    font-size: 110%;
+}
+.footer h2{
+    font-size: 30px;
+    padding-top: 50px;
+    margin-bottom: 70px;
+}
+.footer h4{
+    margin-top: 3px;
+}
+.footer .container{
+    display:flex;
+}
+.footer .container .footer-items{
+    height: 80%;
+    width: 30%;
+    padding-right: 50px;
+}
+
+.footer .container .footer-items p{
+    padding-top: 15px;
+    font-size: 90%;
+}
+.footer .container .footer-items a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    padding-bottom: 20px;
+    font-size: 100%;
+    &:hover{
+        transition: 0.1s;
+        color: lightgray;
+        font-size: 100.5%;
     }
 }
